@@ -3,8 +3,15 @@
     box-sizing: border-box;
     font-family: cursive;
 }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+}
 a{
     text-decoration: none;
+    color: black;
 }
 a:hover{
     color: red;
@@ -14,6 +21,10 @@ a:hover{
 nav{
     background-color: #40E0D0;
     padding-inline: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 .navbar{
     display: flex;
@@ -30,7 +41,15 @@ nav{
     flex-direction: row;
 }
 .nav-elements a{
+    margin-left: 30px;
+}
+.darkMode{
     margin-left: 20px;
+}
+.darkMode i:hover{
+    color: red;
+    cursor: pointer;
+    transition: ease .3s;
 }
 header{
     padding-inline: 110px;
@@ -255,8 +274,17 @@ table {
     margin-right: 20px;
     color: black;
   }
-  i:hover{
+ .icon i:hover{
     color: #40E0D0;
     transition: ease .3s;
     cursor: pointer;
   }
+  .CopyRight{
+    text-align: center;
+    background-color: gray;
+    padding: 20px;
+  }
+  #msg{
+    color: green;
+  }
+  

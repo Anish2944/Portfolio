@@ -16,14 +16,17 @@
         <img class="logo" src="./Anishrbg.png" />
       </div>
       <div class="nav-elements">
-        <a>HOME</a>
-        <a>ABOUT</a>
-        <a>PORTFOLIO</a>
-        <a>CONTACT</a>
+        <a href="#">HOME</a>
+        <a href="#About">ABOUT</a>
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#contact">CONTACT</a>
+        <span class="darkMode">
+          <i id="mode" class="fa-solid fa-circle-half-stroke fa-lg"></i>
+        </span>
       </div>
     </div>
   </nav>
-  <header>
+  <header id="header">
     <div class="header">
       <div class="intro">
         <h1>Hi, I'm Anish Kushwaha</h1>
@@ -39,11 +42,11 @@
         </div>
       </div>
       <div class="photo">
-        <img class="me" src="./me.png" />
+        <img class="me" src="./me.png"/>
       </div>
     </div>
   </header>
-  <section>
+  <section id="About">
     <div class="section1">
       <div class="about">
         <h2>ABOUT ME</h2>
@@ -116,7 +119,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section id="portfolio">
     <div class="sect">
       <h2>PORTFOLIO</h2>
       <div class="portfolio">
@@ -208,22 +211,23 @@
       </table>
     </div>
   </section>
-  <footer>
+  <footer id="contact">
     <h2>Contact Me:-</h2>
     <div class="contact">
       <div class="contact-container">
-        <div class="contact-form">
+        <form name="submit-to-google-sheet" class="contact-form">
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+          <input type="text" id="name" placeholder="Enter Your Name" name="Name" required />
 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" placeholder="Enter Your E-mail" name="Email" required />
 
           <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+          <textarea id="message" placeholder="Write Your Message" name="Message" rows="4" required></textarea>
 
           <button type="submit">Send Message</button>
-        </div>
+        </form>
+        <span id="msg"></span>
       </div>
       <div class="social">
         <div class="icon">
@@ -246,6 +250,10 @@
       </div>
     </div>
   </footer>
+<div class="CopyRight">
+  <p>Copy Right &copy; all Right reserved.</p>
+</div>
+  <script src="./script.js"></script>
 </body>
 
 </html>
