@@ -40,6 +40,7 @@ header{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .intro{
     display: flex;
@@ -100,9 +101,36 @@ section{
 .section1 .about h2{
     text-decoration: underline;
     margin-bottom: 50px;
+    text-align: center;
 }
 .section1 .about p{
     font-size: 1.4rem;
     font-family: cursive;
     margin-bottom: 10px;
+}
+.skills h2{
+    text-align: center;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+.skills{
+    min-height: 50vh;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+
+}
+.card img{
+    width: 60px;
+    margin-bottom: 5px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    flex: 0 0 20%;
 }
