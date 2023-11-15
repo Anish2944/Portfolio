@@ -108,7 +108,7 @@ section{
     font-family: cursive;
     margin-bottom: 10px;
 }
-.skills h2{
+.skills h2,.sect h2{
     text-align: center;
     margin-bottom: 50px;
     text-decoration: underline;
@@ -133,4 +133,39 @@ section{
     flex-direction: column;
     padding: 30px;
     flex: 0 0 20%;
+}
+.portfolio{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card1 {
+    margin: 10px;
+    border: 2px solid black; 
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+}
+
+.card1 img {
+    width: 100%; 
+    height: auto;
+}
+.card1 .hireMe{
+    color: black;
+    border: solid 2px black;
+    border-radius: 10%;
+    position: absolute;
+    text-align: center;
+    left: 10px;
+    bottom: 2px;
+}
+.card1 .CV{
+    color: black;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 10%;
+    position: absolute;
+    right: 10px;
+    bottom: 2px;
 }
