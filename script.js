@@ -28,3 +28,29 @@ mode.addEventListener("click", () => {
 });
 
 /* script for Load more */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const seeBTN = document.getElementById("seeMore");
+  const cards = document.querySelectorAll(".card1")
+  
+  function seeMoreCards() {
+    if (!cards[0].classList.contains('visible')) {
+      for (let i = 0; i < 3; i++) {
+        cards[i].classList.add('visible');
+      }
+      return;
+    }
+    for (let i = 0; i < cards.length; i+=3) {
+      const element = Array.from(cards).slice(i,i+3);
+      element.forEach(card => {
+        card.classList.toggle("visible");
+      });
+    }
+    const allVisible = Array.from(cards).every(card => card.classList.contains("visible"));
+    seeBTN.style.display = allVisible ? `none` : `block`;
+  }
+  
+  seeBTN.addEventListener("click",seeMoreCards);
+  seeMoreCards();
+});
