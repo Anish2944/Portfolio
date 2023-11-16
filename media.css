@@ -4,6 +4,10 @@
         padding-inline: 10px;
     }
 
+    *{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
     #menuBAR{
         display: block;
         position: absolute;
