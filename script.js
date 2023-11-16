@@ -54,3 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
   seeBTN.addEventListener("click",seeMoreCards);
   seeMoreCards();
 });
+
+// Script for nav toggle
+const menuBTN = document.getElementById("menuBAR");
+const toggle = document.getElementById("navToggle");
+menuBTN.addEventListener("click", () => {
+  toggle.classList.toggle("active2");
+})
