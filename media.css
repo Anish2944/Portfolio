@@ -25,7 +25,8 @@
     }
 
     .a,.darkMode{
-        margin-top: 5px;
+        margin-top: 10px;
+        padding: 10px;
     }
 
     .nav-elements {
@@ -37,7 +38,7 @@
         top: 100%;
         left: -100%;
         width: 100%;
-        background: whitesmoke;
+        background: white;
         justify-content: center;
     }
     .nav-elements.active2{
