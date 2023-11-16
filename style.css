@@ -98,6 +98,7 @@ h2{
     font-size: larger;
     border-radius: 10%;
     border: none;
+    margin: 5px;
     margin-right: 50px;
 }
 .hireMe:hover{
