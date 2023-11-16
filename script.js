@@ -1,3 +1,6 @@
+
+/* script for receiving data in google sheet*/
+
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwzUKomP3OsSUc9lvoTaxhi_a0txXLhHrnMoe8A4FnbvCXuhnKa7QJx2HbmeaG-NwD3tg/exec';
 const form = document.forms['submit-to-google-sheet']
 
@@ -10,13 +13,18 @@ form.addEventListener('submit', e => {
       message.innerHTML = "Message sent Successfully.&#x2714;"
       setTimeout(()=>{
         message.innerHTML = ""
-      },5000)
+      },4000)
       form.reset()
     })
     .catch(error => console.error('Error!', error.message))
 });
 
+/*Dark mode toggle */
+
 const mode = document.getElementById("mode");
+const body = document.body;
 mode.addEventListener("click", () => {
-    
-})
+  body.classList.toggle("active");
+});
+
+/* script for Load more */
