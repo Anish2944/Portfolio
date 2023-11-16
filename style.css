@@ -135,13 +135,15 @@ section,footer{
     font-family: cursive;
     margin-bottom: 10px;
 }
-.skills h2,.sect h2,.q{
+.sh,.sect h2,.q{
     text-align: center;
     margin-bottom: 50px;
     text-decoration: underline;
 }
 .skills{
-    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .cards{
     display: flex;
