@@ -273,6 +273,7 @@ table {
   .contact-form {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   .contact-form label {
@@ -308,6 +309,20 @@ table {
   .social .icon{
     position: absolute;
     bottom: 20px;
+  }
+  .contact-info{
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: auto;
+    margin-right: auto;
+  }
+  .address{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  .address i{
+    margin-right: 5px;
   }
   .icon i{
     margin-bottom: 30px;

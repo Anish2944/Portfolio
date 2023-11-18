@@ -83,4 +83,9 @@
         flex: 0 0 100%;
         margin: 10px 0;
     }
+
+    .contact-info{
+        margin-left: 20px;
+        margin-right: 15px;
+    }
 }
