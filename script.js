@@ -13,7 +13,7 @@ form.addEventListener('submit', e => {
       message.innerHTML = "Message sent Successfully.&#x2714;"
       setTimeout(()=>{
         message.innerHTML = ""
-      },4000)
+      },2000)
       form.reset()
     })
     .catch(error => console.error('Error!', error.message))
@@ -39,16 +39,19 @@ document.addEventListener("DOMContentLoaded", () => {
       for (let i = 0; i < 3; i++) {
         cards[i].classList.add('visible');
       }
+      seeBTN.style.display ="block";
       return;
     }
     for (let i = 0; i < cards.length; i+=3) {
       const element = Array.from(cards).slice(i,i+3);
-      element.forEach(card => {
-        card.classList.toggle("visible");
+      element.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.toggle("visible");
+        }, index * 200);
       });
     }
-    const allVisible = Array.from(cards).every(card => card.classList.contains("visible"));
-    seeBTN.style.display = allVisible ? `none` : `block`;
+    // const allVisible = Array.from(cards).every(card => card.classList.contains("visible"));
+    // seeBTN.style.display = allVisible ? `none` : `block`;
   }
   
   seeBTN.addEventListener("click",seeMoreCards);
