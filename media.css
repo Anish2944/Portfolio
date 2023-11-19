@@ -1,6 +1,6 @@
 
 @media (max-width: 768px) {
-    nav {
+    nav, section, header{
         padding-inline: 10px;
     }
 
