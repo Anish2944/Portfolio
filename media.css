@@ -1,8 +1,9 @@
 
 @media (max-width: 768px) {
-    nav, section{
+    nav, section,footer{
         padding-inline: 10px;
     }
+
 
     *{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
