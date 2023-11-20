@@ -84,6 +84,9 @@
         flex: 0 0 100%;
         margin: 10px 0;
     }
+    .address a{
+         colour: white;
+     }
 
     .contact-info{
         margin-left: 20px;
