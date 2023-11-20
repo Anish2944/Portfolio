@@ -134,6 +134,7 @@ section{
 section,footer{
     padding-inline: 110px;
     margin-top: 50px;
+    padding-left: 50px;
 }
 .section1 .about h2{
     text-decoration: underline;
